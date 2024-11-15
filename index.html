@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="slider-container">
+
+    <div class="main-image">
+      <img id="current-image" src="https://t3.ftcdn.net/jpg/08/10/66/92/360_F_810669226_J0JeFjIBh1N3n3q63EVZ1yqdRWMrKXCd.jpg" alt="Slide 1">
+    </div>
+
+
+    <button class="prev-arrow" onclick="changeSlide(-1)">&#8592;</button>
+    <button class="next-arrow" onclick="changeSlide(1)">&#8594;</button>
+
+
+    <div class="thumbnails">
+      <img class="thumb" src="https://t3.ftcdn.net/jpg/08/10/66/92/360_F_810669226_J0JeFjIBh1N3n3q63EVZ1yqdRWMrKXCd.jpg" alt="Thumb 1" onclick="setImage(0)">
+      <img class="thumb" src="https://t3.ftcdn.net/jpg/08/13/44/54/360_F_813445490_DLfLChPrF6CHCHJOCOZ5nvn398fQ6Vee.jpg" alt="Thumb 2" onclick="setImage(1)">
+      <img class="thumb" src="https://t4.ftcdn.net/jpg/09/14/68/03/360_F_914680337_IeCyjL8nuTdJexn0vXAsb2v54K9El7hg.jpg" alt="Thumb 3" onclick="setImage(2)">
+      <img class="thumb" src="https://t3.ftcdn.net/jpg/07/28/90/52/360_F_728905276_PPWXGiFQL6oE4bWKe6UijLLvjS7aaipT.jpg" alt="Thumb 4" onclick="setImage(3)">
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
